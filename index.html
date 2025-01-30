@@ -16,31 +16,46 @@
     </style>
 </head>
 
-<body>
+<body class="bg-rose-50" style=" 
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}">
     <main>
-        <div class="bg-rose-900 text-rose-100 w-full flex flex-col md:flex-row p-3 justify-center md:justify-between">
+       
+        <div class="bg-rose-900 text-rose-100  flex flex-col md:flex-row 
+        p-3 justify-center md:justify-between">
+
             <div class="flex items-center gap-4">
                 <div class="flex items-center gap-2">
                     <i class="fa-solid fa-phone"></i>
                     <p class="hover:text-rose-300 cursor-pointer">01/223697458</p>
                 </div>
+                
                 <div class="flex items-center gap-2">
                     <i class="fa-regular fa-envelope"></i>
                     <p class="hover:text-rose-300 cursor-pointer">BabyGirl@gmail.com</p>
                 </div>
             </div>
         </div>
-
-        <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-rose-50">
-            <h3 class="text-rose-800 font-bold text-xl">BabyGirl</h3>
-            <nav class="flex flex-row gap-6">
-                <a href="#" class="text-rose-800 hover:text-rose-600">Home</a>
-                <a href="#" class="text-rose-800 hover:text-rose-600">Contact Us</a>
-                <a href="#" class="text-rose-800 hover:text-rose-600">Products</a>
-                <a href="#" class="text-rose-800 hover:text-rose-600">Story</a>
-            </nav>
-        </header>
-
+        
+        <nav class="bg-rose-100 text-rose-900 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Brand Logo -->
+                <a href="#" class="text-rose-900 font-bold text-xl">BabyGirl</a>
+        
+                <div class="flex flex-col md:flex-row justify-center md:justify-end space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#" class="text-rose-400 hover:text-rose-300">Home</a>
+                    <a href="#" class="text-rose-400 hover:text-rose-300">About Us</a>
+                    <a href="#" class="text-rose-400 hover:text-rose-300">Products</a>
+                    <a href="#" class="text-rose-400 hover:text-rose-300">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
         <section class="container mx-auto p-4 text-center md:text-left">
             <div class="flex flex-col md:flex-row justify-evenly items-center">
                 <div class="p-6">
@@ -53,50 +68,110 @@
                 </div>
             </div>
         </section>
+        <!-- our products  -->
+        <section class=" bg-rose-100 ">
+            <h2 class="text-rose-800 font-bold text-3xl py-3 text-center uppercase mb-6"> our products </h2>
 
-        <!-- Products Section -->
-        <section class="mt-10 px-6">
-            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-7">Our Best Products</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="relative">
-                    <img src="imgs/img(2).jpg" alt="Product 1" class="w-full rounded-lg hover:scale-105 transition">
-                    <div class="absolute bottom-4 left-4 bg-red-900 text-white px-3 py-1 text-sm">Sale!</div>
-                </div>
-                <div class="relative">
-                    <img src="imgs/img(4).jpg" alt="Product 2" class="w-full rounded-lg hover:scale-105 transition">
-                </div>
-                <div class="relative">
-                    <img src="imgs/img(3).jpg" alt="Product 3" class="w-full rounded-lg hover:scale-105 transition">
-                </div>
+            <div class="flex md:flex-row flex-col justify-center px-8">
+
+                <div class="flex flex-col">
+    
+                    <div class="p-5">
+                        <img src="imgs/img(1).jpg" alt="img1" class="md:h-[350px] md:w-[400px]  rounded-3xl">
+                    </div>
+                    <div class="p-5 ">
+                        <img src="imgs/img(2).jpg" alt="img2"  class="md:h-[350px] md:w-[400px] rounded-3xl">
+                    </div>
+                 </div>
+        
+                  <div class="p-5">
+                    <img src="imgs/vertical.jpg" alt="vertical image"  class="md:h-[720px] md:w-[400px] rounded-3xl">
+                  </div>
+                  
+                 <div class="flex flex-col">
+                    <div class="p-5">
+                        <img src="imgs/img(4).jpg" alt="img3" class=" md:h-[350px] md:w-[400px] rounded-3xl" >
+                    </div>
+                    <div class="p-5">
+                        <img src="imgs/img(3).jpg" alt="img4"  class=" md:h-[350px] md:w-[400px] rounded-3xl">
+                    </div>
+                 </div>
+             </div>
+        </section>
+        <!-- About Us Section -->
+        <section class="container mx-auto p-4 mt-10">
+            <h2 class="text-rose-800 font-bold text-3xl text-center uppercase mb-6">ABOUT US</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="cards-container">
+               
             </div>
+        </section>
+        
+        <!-- Contact Us Section -->
+        <section class="container mx-auto p-4 mt-10">
+            <h2 class="text-rose-800 font-bold text-3xl text-center uppercase mb-6">CONTACT US</h2>
+           <div class="flex md:flex-row flex-col justify-between">
+
+            <div class=" p-6  w-[500px]
+              flex flex-col ">
+               
+                    <div class="mb-4">
+                        <label for="firstName" class="block text-rose-800 font-bold mb-2">Your First Name</label>
+                        <input type="text" id="firstName"
+                         class="w-full px-4 py-2 border border-rose-300 rounded-lg outline-rose-400">
+                    </div>
+                    <div class="mb-4">
+                        <label for="telephone" class="block text-rose-800 font-bold mb-2">Your Telephone Number</label>
+                        <input type="tel" id="telephone" 
+                        class="w-full px-4 py-2 border border-rose-300 rounded-lg outline-rose-400">
+                    </div>
+                    <div class="mb-4">
+                        <label for="address" class="block text-rose-800 font-bold mb-2">Address</label>
+                        <input type="text" id="address" 
+                        class="w-full px-4 py-2 border border-rose-300 rounded-lg outline-rose-400">
+                    </div>
+                    <div class="mb-4">
+                        <label for="country" class="block text-rose-800 font-bold mb-2">Country</label>
+                        <input type="text" id="country" 
+                        class="w-full px-4 py-2 border border-rose-300 rounded-lg outline-rose-400">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-rose-800 font-bold mb-2">Message</label>
+                        <textarea id="message" 
+                        class="w-full px-4 py-2 border border-rose-300 rounded-lg outline-rose-400"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-rose-500 text-white px-4 py-2 rounded-lg hover:bg-rose-600">Submit</button>
+                
+            </div>
+            <div class="p-6 ">
+                <img src="imgs/loog-in.png" alt="" 
+                 class=" w-[500px] h-[500px]  rounded-3xl ">
+            </div>
+           </div>
         </section>
 
         <!-- Footer -->
         <footer class="bg-rose-900 text-rose-100 py-10 mt-10">
-            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
-                    <p>BabyGirl is dedicated to providing the best clothing for newborns.</p>
+                    <p class="text-rose-100">
+                        BabyGirl is dedicated to providing the best clothing for newborns. Our mission is to ensure every
+                        baby and their family experiences comfort and style.
+                    </p>
                 </div>
                 <div>
                     <h3 class="text-rose-300 font-bold text-lg mb-4">Contact Us</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-phone text-rose-300 mr-2"></i> 01/223697458</li>
-                        <li><i class="fa-regular fa-envelope text-rose-300 mr-2"></i> BabyGirl@gmail.com</li>
-                        <li><i class="fa-solid fa-location-dot text-rose-300 mr-2"></i> 123 Baby Street</li>
+                    <ul class="text-rose-100">
+                        <li class="mb-2"><i class="fa-solid fa-phone text-rose-300 mr-2"></i> 01/223697458</li>
+                        <li class="mb-2"><i class="fa-regular fa-envelope text-rose-300 mr-2"></i> BabyGirl@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot text-rose-300 mr-2"></i> 13 Baby Street, Happy Town</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-rose-300 font-bold text-lg mb-4">Follow Us</h3>
-                    <div class="flex gap-4">
-                        <a href="#" class="hover:text-rose-300"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-rose-300"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="hover:text-rose-300"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
             </div>
-            <div class="text-center mt-6 text-sm">&copy; 2025 BabyGirl. All rights reserved.</div>
+            <div class="text-center mt-6 text-sm text-rose-300">&copy; 2025 BabyGirl. All rights reserved.</div>
         </footer>
     </main>
+    <script src="js/index.js"> </script>
 </body>
 </html>
