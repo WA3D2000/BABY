@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Baby Girl</title>
     <style>
         body {
@@ -21,142 +18,85 @@
 
 <body>
     <main>
-        <div class="bg-rose-900 text-rose-100 w-full flex flex-col md:flex-row">
-            <div class="call p-5 flex justify-center md:justify-start">
-                <i class="fa-solid fa-phone text-rose-100 mr-2"></i>
-                <p class="hover:text-rose-300 capitalize cursor-pointer">01/223697458</p>
-            </div>
-            <div class="email p-5 flex justify-center md:justify-start">
-                <i class="fa-regular fa-envelope text-rose-100 mr-2"></i>
-                <p class="hover:text-rose-300 capitalize cursor-pointer">BabyGirl@gmail.com</p>
+        <div class="bg-rose-900 text-rose-100 w-full flex flex-col md:flex-row p-3 justify-center md:justify-between">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="hover:text-rose-300 cursor-pointer">01/223697458</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="hover:text-rose-300 cursor-pointer">BabyGirl@gmail.com</p>
+                </div>
             </div>
         </div>
-        <header class="flex flex-col md:flex-row justify-center items-center gap-8 py-4 bg-rose-50">
-            <div class="logo">
-                <h3 class="text-rose-800 font-bold cursor-pointer">BabyGirl</h3>
-            </div>
-            <nav class="flex flex-row justify-center items-center gap-8">
-                <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">home</a></li>
-                <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">contact us</a></li>
-                <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">products</a></li>
-                <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">story</a></li>
+
+        <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-rose-50">
+            <h3 class="text-rose-800 font-bold text-xl">BabyGirl</h3>
+            <nav class="flex flex-row gap-6">
+                <a href="#" class="text-rose-800 hover:text-rose-600">Home</a>
+                <a href="#" class="text-rose-800 hover:text-rose-600">Contact Us</a>
+                <a href="#" class="text-rose-800 hover:text-rose-600">Products</a>
+                <a href="#" class="text-rose-800 hover:text-rose-600">Story</a>
             </nav>
         </header>
-        <div class="container mx-auto p-4">
+
+        <section class="container mx-auto p-4 text-center md:text-left">
             <div class="flex flex-col md:flex-row justify-evenly items-center">
-                <div class="p-8 text-center md:text-left">
-                    <h1 class="text-rose-800 font-bold text-4xl uppercase mb-2">baby girl for newborn clothes</h1>
-                    <p class="text-rose-800 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
-                        voluptatem delectus commodi minus alias a excepturi autem accusamus nisi quaerat?</p>
-                    <button
-                        class="p-3 font-semibold rounded-lg text-rose-700 bg-red-300 hover:bg-rose-200">discover</button>
-                </div>
-                <div class="w-full md:w-1/2 h-64 md:h-80">
-                    <img src="imgs/a-55.jpg" alt="" class="rounded-3xl w-full h-full object-cover">
-                </div>
-            </div>
-        </div>
-        <section class="mt-10">
-            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-7">All Products You Need Are Here</h1>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <div class="flex flex-col gap-4">
-                    <div class="w-full md:w-1/2 p-6">
-                        <img src="imgs/img(2).jpg" alt="cloth-1" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="relative w-full md:w-1/2 p-8">
-                        <img src="imgs/img(4).jpg" alt="cloth-2" class="w-full h-full object-cover rounded-lg">
-                        <div class="absolute bottom-4 left-4 bg-red-900 text-white py-1 px-2 text-sm font-semibold">
-                            Sale!</div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 p-4">
-                    <img src="imgs/vertical.jpg" alt="Vertical Image" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <div class="flex flex-col gap-4">
-                    <div class="relative w-full md:w-1/2 p-6">
-                        <img src="imgs/img(2).webp" alt="cloth-4" class="w-full h-full object-cover rounded-lg">
-                        <div class="absolute bottom-4 left-4 bg-red-900 text-white py-1 px-2 text-sm font-semibold">
-                            Sale!</div>
-                    </div>
-                    <div class="w-full md:w-1/2 p-8">
-                        <img src="imgs/img(3).jpg" alt="cloth-5" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="mt-10 bg-rose-50 p-10">
-            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-10">About Us</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <!-- Add your about us content here -->
-            </div>
-        </section>
-        <section class="mt-10 p-10">
-            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-10">Contact Us</h1>
-            <div class="flex flex-col md:flex-row justify-between gap-10">
-                <div class="flex flex-col w-full md:w-1/2">
-                    <label for="fn" class="text-rose-400 font-semibold mb-3">Your First Name</label>
-                    <input type="text" id="fn"
-                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
-                    <label for="num" class="text-rose-400 font-semibold mb-3">Your Telephone Number</label>
-                    <input type="text" id="num"
-                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
-                    <label for="add" class="text-rose-400 font-semibold mb-3">Address</label>
-                    <input type="text" id="add"
-                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
-                    <label for="country" class="text-rose-400 font-semibold mb-3">Country</label>
-                    <input type="text" id="country"
-                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
-                    <button
-                        class="text-rose-900 bg-rose-600 rounded-lg px-10 py-3 hover:bg-red-100 transition duration-300">Submit</button>
+                <div class="p-6">
+                    <h1 class="text-rose-800 font-bold text-4xl uppercase">Baby Girl Newborn Clothes</h1>
+                    <p class="text-rose-800 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button class="mt-4 px-6 py-2 font-semibold rounded-lg bg-rose-500 text-white hover:bg-rose-400">Discover</button>
                 </div>
                 <div class="w-full md:w-1/2">
-                    <img src="imgs/loog-in.png" alt="" class="rounded-3xl w-full h-full object-cover">
+                    <img src="imgs/a-55.jpg" alt="Baby clothes" class="rounded-3xl w-full object-cover">
                 </div>
             </div>
         </section>
-        <footer class="bg-rose-900 text-rose-100 py-10">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div>
-                        <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
-                        <p class="text-sm">BabyGirl is dedicated to providing the best clothing for newborns.
-                            Our mission is to bring comfort, style</p>
 
-                        <!-- footer  -->
-                        <footer class="bg-rose-900 text-rose-100 py-10">
-                            <div class="container mx-auto px-4">
-                                <!-- Footer Grid -->
-                                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                                    <!-- About Section -->
-                                    <div>
-                                        <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
-                                        <p class="text-sm">
-                                            BabyGirl is dedicated to providing the best clothing for newborns. Our
-                                            mission is to bring comfort, style, and joy to every baby and their family.
-                                        </p>
-                                    </div>
+        <!-- Products Section -->
+        <section class="mt-10 px-6">
+            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-7">Our Best Products</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative">
+                    <img src="imgs/img(2).jpg" alt="Product 1" class="w-full rounded-lg hover:scale-105 transition">
+                    <div class="absolute bottom-4 left-4 bg-red-900 text-white px-3 py-1 text-sm">Sale!</div>
+                </div>
+                <div class="relative">
+                    <img src="imgs/img(4).jpg" alt="Product 2" class="w-full rounded-lg hover:scale-105 transition">
+                </div>
+                <div class="relative">
+                    <img src="imgs/img(3).jpg" alt="Product 3" class="w-full rounded-lg hover:scale-105 transition">
+                </div>
+            </div>
+        </section>
 
-                                    <!-- Contact Info -->
-                                    <div>
-                                        <h3 class="text-rose-300 font-bold text-lg mb-4">Contact Us</h3>
-                                        <ul class="space-y-2">
-                                            <li class="flex items-center">
-                                                <i class="fa-solid fa-phone text-rose-300 mr-2"></i>
-                                                <span>01/223697458</span>
-                                            </li>
-                                            <li class="flex items-center">
-                                                <i class="fa-regular fa-envelope text-rose-300 mr-2"></i>
-                                                <span>BabyGirl@gmail.com</span>
-                                            </li>
-                                            <li class="flex items-center">
-                                                <i class="fa-solid fa-location-dot text-rose-300 mr-2"></i>
-                                                <span>123 Baby Street, Happy Town</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                        </footer>
+        <!-- Footer -->
+        <footer class="bg-rose-900 text-rose-100 py-10 mt-10">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
+                    <p>BabyGirl is dedicated to providing the best clothing for newborns.</p>
+                </div>
+                <div>
+                    <h3 class="text-rose-300 font-bold text-lg mb-4">Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone text-rose-300 mr-2"></i> 01/223697458</li>
+                        <li><i class="fa-regular fa-envelope text-rose-300 mr-2"></i> BabyGirl@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot text-rose-300 mr-2"></i> 123 Baby Street</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-rose-300 font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-rose-300"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-rose-300"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-rose-300"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-6 text-sm">&copy; 2025 BabyGirl. All rights reserved.</div>
+        </footer>
     </main>
-    <script src="js/index.js"></script>
 </body>
 </html>
