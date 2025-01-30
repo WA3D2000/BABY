@@ -9,179 +9,154 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script&family=Eczar:wght@400..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=IM+Fell+English+SC&family=Indie+Flower&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Short+Stack&family=Signika+Negative:wght@300..700&family=Sofia&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Baby girl </title>
+    <title>Baby Girl</title>
+    <style>
+        body {
+            font-family: 'Short Stack', cursive;
+        }
+    </style>
 </head>
 
-<body style="font-family: Short Stack;">
+<body>
     <main>
-        <div class="bg-rose-900 text-rose-100  w-full h-15 flex flex-row">
-            <div class="call p-5 flex">
+        <div class="bg-rose-900 text-rose-100 w-full flex flex-col md:flex-row">
+            <div class="call p-5 flex justify-center md:justify-start">
                 <i class="fa-solid fa-phone text-rose-100 mr-2"></i>
-                <p class=" hover:text-rose-300 capitalize cursor-pointer">01/223697458</p>
+                <p class="hover:text-rose-300 capitalize cursor-pointer">01/223697458</p>
             </div>
-            <div class="email p-5 flex">
+            <div class="email p-5 flex justify-center md:justify-start">
                 <i class="fa-regular fa-envelope text-rose-100 mr-2"></i>
-                <p class=" hover:text-rose-300 capitalize cursor-pointer">BabyGirl@gmail.com</p>
+                <p class="hover:text-rose-300 capitalize cursor-pointer">BabyGirl@gmail.com</p>
             </div>
         </div>
-        <header class="flex-cols md:flex flex-row justify-center items-center gap-8 py-4 bg-rose-50 ">
+        <header class="flex flex-col md:flex-row justify-center items-center gap-8 py-4 bg-rose-50">
             <div class="logo">
                 <h3 class="text-rose-800 font-bold cursor-pointer">BabyGirl</h3>
             </div>
-            <nav class="flex flex-row justify-center items-center gap-8" style="list-style: none;">
+            <nav class="flex flex-row justify-center items-center gap-8">
                 <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">home</a></li>
                 <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">contact us</a></li>
                 <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">products</a></li>
                 <li><a href="#" class="text-rose-800 hover:text-rose-600 capitalize">story</a></li>
             </nav>
         </header>
-        <!-- hero section -->
-        <div class="containner">
-            <div class="h-150 flex-cols  md:flex flex-row justify-evenly items-center h-180"  
-            style="margin: 0 auto ;">
-
-                <div class="p-8 md:p-0 text-red-900 mx-auto ">
-                    <h1 class="text-rose-800 font-bold text-4xl uppercase mb-2">
-                        baby girl for new born cloths </h1>
-    
-                    <p class="text-rose-800 capitalize w-100  mb-2">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Dolor voluptatem delectus commodi
-                        minus alias a excepturi autem accusamus nisi quaerat?</p>
-    
-                    <button class="p-3 font-semibold rounded-lg text-rose-700 bg-red-300 hover:bg-rose-200 ">
-                        discover</button>
+        <div class="container mx-auto p-4">
+            <div class="flex flex-col md:flex-row justify-evenly items-center">
+                <div class="p-8 text-center md:text-left">
+                    <h1 class="text-rose-800 font-bold text-4xl uppercase mb-2">baby girl for newborn clothes</h1>
+                    <p class="text-rose-800 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                        voluptatem delectus commodi minus alias a excepturi autem accusamus nisi quaerat?</p>
+                    <button
+                        class="p-3 font-semibold rounded-lg text-rose-700 bg-red-300 hover:bg-rose-200">discover</button>
                 </div>
-                <div class="w-[400px] h-[300px] mx-auto md:w-[400px] md:h-[500px] overflow-hidden">
+                <div class="w-full md:w-1/2 h-64 md:h-80">
                     <img src="imgs/a-55.jpg" alt="" class="rounded-3xl w-full h-full object-cover">
                 </div>
             </div>
         </div>
-        <!-- products section -->
         <section class="mt-10">
-            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-7">
-                All Products You Need Are Here
-            </h1>
-            <div class=" flex-cols md:flex justify-center items-center">
-        <!-- Left images -->
-                <div class="flex flex-col gap-2">
-                    <!-- first  image -->
-                    <div class="w-[450px]  p-6  md:w-[300px] self-center">
-                        <img src="imgs/img(2).jpg" alt="cloth-1" class=" md:p-3 h-70 w-full ">
+            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-7">All Products You Need Are Here</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="flex flex-col gap-4">
+                    <div class="w-full md:w-1/2 p-6">
+                        <img src="imgs/img(2).jpg" alt="cloth-1" class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <!-- image-2 -->
-                    <div class="relative w-[450px]  p-8  self-center  md:w-[300px]">
-                        <img src="imgs/img(4).jpg" alt="cloth-2" class="w-full md:p-10 p-10 h-70"">
-               <div class=" absolute bottom-10 left-20 bg-red-900 text-white py-1 text-sm font-semibold">
-                        Sale!
+                    <div class="relative w-full md:w-1/2 p-8">
+                        <img src="imgs/img(4).jpg" alt="cloth-2" class="w-full h-full object-cover rounded-lg">
+                        <div class="absolute bottom-4 left-4 bg-red-900 text-white py-1 px-2 text-sm font-semibold">
+                            Sale!</div>
                     </div>
                 </div>
-            </div>
-        <!-- Vertical Image -->
-            <div class="w-[400px] mx-auto">
-                <img src="imgs/vertical.jpg" alt="Vertical Image" class="p-5 md:p-3 w-full h-140 ">
-            </div>
-        <!-- Right images -->
-            <div class="flex flex-col gap-2">
-             <!-- image-4 -->
-                <div class="relative w-[450px]  p-6  self-center md:w-[300px]">
-                    <img src="imgs/img(2).webp" alt="cloth-4" class=" p-10 md:p-3 w-full h-70"">
-                    <div class=" absolute bottom-8 left-8 bg-red-900 text-white text-sm font-semibold">
-                    Sale!
+                <div class="w-full md:w-1/2 p-4">
+                    <img src="imgs/vertical.jpg" alt="Vertical Image" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="relative w-full md:w-1/2 p-6">
+                        <img src="imgs/img(2).webp" alt="cloth-4" class="w-full h-full object-cover rounded-lg">
+                        <div class="absolute bottom-4 left-4 bg-red-900 text-white py-1 px-2 text-sm font-semibold">
+                            Sale!</div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-8">
+                        <img src="imgs/img(3).jpg" alt="cloth-5" class="w-full h-full object-cover rounded-lg">
+                    </div>
                 </div>
             </div>
-            <!-- image-5 -->
-            <div class="w-[450px]  p-86  self-center md:w-[300px]">
-                <img src="imgs/img(3).jpg" Description of image" class="w-full p-10 md:p-3 h-70"">
+        </section>
+        <section class="mt-10 bg-rose-50 p-10">
+            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-10">About Us</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Add your about us content here -->
+            </div>
+        </section>
+        <section class="mt-10 p-10">
+            <h1 class="text-center text-rose-800 font-bold text-4xl uppercase mb-10">Contact Us</h1>
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+                <div class="flex flex-col w-full md:w-1/2">
+                    <label for="fn" class="text-rose-400 font-semibold mb-3">Your First Name</label>
+                    <input type="text" id="fn"
+                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
+                    <label for="num" class="text-rose-400 font-semibold mb-3">Your Telephone Number</label>
+                    <input type="text" id="num"
+                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
+                    <label for="add" class="text-rose-400 font-semibold mb-3">Address</label>
+                    <input type="text" id="add"
+                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
+                    <label for="country" class="text-rose-400 font-semibold mb-3">Country</label>
+                    <input type="text" id="country"
+                        class="px-4 py-2 border-2 border-red-900 rounded-lg bg-rose-100 outline-none focus:outline-rose-700 mb-4">
+                    <button
+                        class="text-rose-900 bg-rose-600 rounded-lg px-10 py-3 hover:bg-red-100 transition duration-300">Submit</button>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="imgs/loog-in.png" alt="" class="rounded-3xl w-full h-full object-cover">
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- oor story -->
-    <section class="mt-10 bg-rose-50 h-auto p-10">
-        <h1 class="text-center text-rose-800 font-bold text-4xl uppercase p-10">
-            About Us
-        </h1>
-    
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 justify-center items-center"  id="cards-container">
-           
-        </div>
-    </section>
+        </section>
+        <footer class="bg-rose-900 text-rose-100 py-10">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
+                        <p class="text-sm">BabyGirl is dedicated to providing the best clothing for newborns.
+                            Our mission is to bring comfort, style</p>
 
-      <!--  contact us  -->
-      <section >
-        <h1 class="text-center text-rose-800 font-bold text-4xl uppercase p-10"> contact us </h1>
-        <div class="flex flex-row justify-between h-auto p-10">
-       <div class=" md:grid grid-cols-1 gap-10 mt-4 mx-10 w-[500px]">
-        <!-- name -->
-            <div class="name flex flex-col"> 
-                 <label for="fn" class="text-rose-400 font-semibold mb-3 pl-5"> your first neme</label>
-                 <input type="text" id="fn" class="px-10 py-2 border-2 border-red-900 rounded-lg text-zink-700 bg-rose-100 outline-rose-700"">
-            </div>
-        <!-- number -->
-             <div class="number flex flex-col">
-                 <label for="num" class="text-rose-400 font-semibold mb-3 pl-5""> your telephone number </label>
-                <input type="text" id="num"class="px-10 py-2 border-2 border-red-900 rounded-lg ext-zink-700 bg-rose-100 outline-rose-700">
-             </div>
-        <!-- adress -->
-            <div class="adress flex flex-col">
-                  <label for="add" class="text-rose-400 font-semibold mb-3 pl-5""> adress</label>
-                  <input type="text" id="add" class="px-10 py-2 border-2 border-red-900 rounded-lg text-zink-700 bg-rose-100 outline-rose-700">
-            </div>
-        <!-- country -->
-             <div class="country flex flex-col">
-                <label for="country" class="text-red-400 font-semibold mb-3 pl-5""> country </label>
-                <input type="text" id="country" class="px-10 py-2 border-2 border-red-900 rounded-lg ext-zink-700 bg-rose-100 outline-rose-700">
-             </div>
-             <div class="text-center my-5">
-                <button class="text-rose-900 bg-rose-600 rounded-lg px-10 py-3  hover:bg-red-100 transition duration-300"> submit </button>
-               </div>
-       </div>
-      
-       <div class="md:w-[400px] md:h-[500px] hidden md:block">
-        <img src="imgs/loog-in.png" alt="" class="rounded-3xl w-full h-full object-cover">
-    </div>
-</div>
-      </section>
-    <!-- footer  -->
-    <footer class="bg-rose-900 text-rose-100 py-10">
-        <div class="container mx-auto px-4">
-            <!-- Footer Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- About Section -->
-                <div>
-                    <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
-                    <p class="text-sm">
-                        BabyGirl is dedicated to providing the best clothing for newborns. Our mission is to bring comfort, style, and joy to every baby and their family.
-                    </p>
-                </div>
-    
-                <!-- Contact Info -->
-                <div>
-                    <h3 class="text-rose-300 font-bold text-lg mb-4">Contact Us</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i class="fa-solid fa-phone text-rose-300 mr-2"></i>
-                            <span>01/223697458</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa-regular fa-envelope text-rose-300 mr-2"></i>
-                            <span>BabyGirl@gmail.com</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa-solid fa-location-dot text-rose-300 mr-2"></i>
-                            <span>123 Baby Street, Happy Town</span>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-    </footer>
+                        <!-- footer  -->
+                        <footer class="bg-rose-900 text-rose-100 py-10">
+                            <div class="container mx-auto px-4">
+                                <!-- Footer Grid -->
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                                    <!-- About Section -->
+                                    <div>
+                                        <h3 class="text-rose-300 font-bold text-lg mb-4">About BabyGirl</h3>
+                                        <p class="text-sm">
+                                            BabyGirl is dedicated to providing the best clothing for newborns. Our
+                                            mission is to bring comfort, style, and joy to every baby and their family.
+                                        </p>
+                                    </div>
+
+                                    <!-- Contact Info -->
+                                    <div>
+                                        <h3 class="text-rose-300 font-bold text-lg mb-4">Contact Us</h3>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center">
+                                                <i class="fa-solid fa-phone text-rose-300 mr-2"></i>
+                                                <span>01/223697458</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-envelope text-rose-300 mr-2"></i>
+                                                <span>BabyGirl@gmail.com</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-solid fa-location-dot text-rose-300 mr-2"></i>
+                                                <span>123 Baby Street, Happy Town</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </footer>
     </main>
-     <script src="js/index.js"></script>
-
+    <script src="js/index.js"></script>
 </body>
 </html>
